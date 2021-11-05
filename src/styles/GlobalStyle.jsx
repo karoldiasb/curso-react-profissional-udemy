@@ -91,4 +91,4 @@ const GlobalStyleComposed = () => (
   </>
 );
 
-export default GlobalStyle;
+export default GlobalStyleComposed;
