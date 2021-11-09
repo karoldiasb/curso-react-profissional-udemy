@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import bgHeaderImage from "../stories/assets/bg-header.jpg";
 import bgCarImage from "../stories/assets/bg-car.jpg";
 import Heading from "./Heading";
+import ButtonWrapper from "./Button";
 
 export default {
   title: "Components/Hero",
@@ -32,5 +33,9 @@ export const withList = () => (
       <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
       <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
     </ul>
+
+    <ButtonWrapper color="primary" variant="outlined">
+      Matricule-se agora
+    </ButtonWrapper>
   </Hero>
 );
