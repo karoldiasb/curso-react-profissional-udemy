@@ -5,10 +5,12 @@ import PropTypes from "prop-types";
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
 import ButtonWrapper from "components/atoms/Button";
-import HeroImage from "assets/bg-header.jpg";
 import Grid from "components/atoms/Grid";
 import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
+import Button from "components/atoms/Button";
+import HeroImage from "assets/bg-header.jpg";
+import AboutVideo from "assets/about.mp4";
 
 const Home = () => (
   <>
@@ -45,6 +47,35 @@ const Home = () => (
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </Feature>
       </Grid>
+    </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Conheça nossos serviços</h2>
+      </Heading>
+    </Section>
+    <Section>
+      <Grid md={2}>
+        <div>
+          <Heading>
+            <h2>Auto escola</h2>
+          </Heading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minus
+            quia totam, sed aspernatur omnis hic eaque perferendis ex.
+          </p>
+          <div>
+            <Button color="primary">Saiba mais</Button>
+          </div>
+        </div>
+        <div>
+          <video src={AboutVideo} width="100%" autoPlay loop />
+        </div>
+      </Grid>
+    </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Dúvidas recorrentes</h2>
+      </Heading>
     </Section>
   </>
 );
