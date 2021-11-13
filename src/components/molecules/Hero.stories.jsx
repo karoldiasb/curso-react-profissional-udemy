@@ -2,7 +2,7 @@ import React from "react";
 
 import Hero from "./Hero";
 import bgHeaderImage from "../../stories/assets/bg-header.jpg";
-import bgCarImage from "../../stories/assets/bg-car.jpg";
+import bgCarImage from "../../stories/assets/bg-header.jpg";
 import Heading from "../atoms/Heading";
 import ButtonWrapper from "../atoms/Button";
 

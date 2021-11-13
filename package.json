@@ -42,6 +42,14 @@
       }
     ]
   },
+  "jest":{
+    "collectCoverageFrom":[
+      "src/**/*.js",
+      "!src/**/*.stories.js",
+      "!src/serviceWorker.js",
+      "!src/index.js"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -62,5 +70,8 @@
     "@storybook/node-logger": "^6.3.12",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.12"
+  },
+  "optionalDependencies": {
+    "babel-loader": "8.1.0"
   }
 }
