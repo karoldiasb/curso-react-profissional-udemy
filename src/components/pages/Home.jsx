@@ -11,6 +11,7 @@ import Section from "components/molecules/Section";
 import Button from "components/atoms/Button";
 import HeroImage from "assets/bg-header.jpg";
 import AboutVideo from "assets/about.mp4";
+import Footer from "components/organisms/Footer";
 
 const Home = () => (
   <>
@@ -77,6 +78,7 @@ const Home = () => (
         <h2>Dúvidas recorrentes</h2>
       </Heading>
     </Section>
+    <Footer />
   </>
 );
 
