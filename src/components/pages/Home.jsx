@@ -14,6 +14,7 @@ import AboutVideo from "assets/about.mp4";
 import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
 import PlaceholderImage from "stories/assets/bg-car.jpg";
+import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 
 const products = [
   {
@@ -112,6 +113,26 @@ const Home = () => (
     <Section inverse>
       <Heading>
         <h2>Dúvidas recorrentes</h2>
+        <AccordionGroup>
+          <Accordion title="Como eu renovo minha CNH?">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos et
+            explicabo iste, odio quam tempore, nobis impedit accusantium
+            quisquam culpa velit ratione dolores. Maiores, sunt tempora. Odit
+            perspiciatis nisi velit!
+          </Accordion>
+          <Accordion title="Como faço a mudança de categoria?">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos et
+            explicabo iste, odio quam tempore, nobis impedit accusantium
+            quisquam culpa velit ratione dolores. Maiores, sunt tempora. Odit
+            perspiciatis nisi velit!
+          </Accordion>
+          <Accordion title="Fui multado, e agora?">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos et
+            explicabo iste, odio quam tempore, nobis impedit accusantium
+            quisquam culpa velit ratione dolores. Maiores, sunt tempora. Odit
+            perspiciatis nisi velit!
+          </Accordion>
+        </AccordionGroup>
       </Heading>
     </Section>
     <Footer />
