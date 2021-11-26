@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAccessibleIcon, FaCar, FaKey, FaMapMarkedAlt } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
@@ -102,7 +102,9 @@ const Home = () => (
             quia totam, sed aspernatur omnis hic eaque perferendis ex.
           </p>
           <div>
-            <Button color="primary">Saiba mais</Button>
+            <Button as={Link} to="/sobre" color="primary">
+              Saiba mais
+            </Button>
           </div>
         </div>
         <div>
