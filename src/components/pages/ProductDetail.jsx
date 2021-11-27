@@ -16,7 +16,7 @@ import Footer from "components/organisms/Footer";
 import HeroImage from "assets/bg-header.jpg";
 import SpeedImage from "draws/Speed";
 import BreadCrumb from "components/atoms/BreadCrumb";
-import ProductType from "types/ProductType";
+import ProductType from "models/types/ProductType";
 
 const PinnedList = styled.ul`
   list-style: none;
