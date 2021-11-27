@@ -1,12 +1,14 @@
 import React from "react";
-
+import { useParams } from "react-router-dom";
 import ProductDetailPage from "components/pages/ProductDetail";
 import { useScrollToTop } from "hooks/scroll";
+import { useProduct } from "hooks/products";
 
 const ProductDetail = () => {
   useScrollToTop();
-
-  return <ProductDetailPage />;
+  const { slang } = useParams(); //parâmetro definido na nomeação da rota (index.jsx) => <Route path="/servicos/:slang" element={<ProductDetail />} />
+  const product = useProduct({ slang });
+  return <ProductDetailPage product={product} />;
 };
 
 export default ProductDetail;
